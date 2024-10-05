@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { WebApp } from 'telegram-web-app';
+
 import './App.css';
 
 const exercises = [
@@ -69,19 +71,17 @@ function App() {
   const [selectedExercise, setSelectedExercise] = useState(null);
   const [user, setUser] = useState({ first_name: 'User', last_name: '' });
 
-  useEffect(() => {
-    if (window.Telegram && window.Telegram.WebApp) {
-      const telegramUser = window.Telegram.WebApp.initDataUnsafe?.user;
-      if (telegramUser) {
+    useEffect(() => {
+      if (WebApp.initDataUnsafe?.user) {
+        const telegramUser = WebApp.initDataUnsafe.user;
         setUser({
           first_name: telegramUser.first_name || 'User',
           last_name: telegramUser.last_name || ''
         });
+      } else {
+        console.warn('Это приложение не запущено в Telegram. Пользователь будет загружен с стандартными данными.');
       }
-    } else {
-      console.warn('Это приложение не запущено в Telegram. Пользователь будет загружен с стандартными данными.');
-    }
-  }, []);
+    }, []);
 
   const handleBackToMain = () => {
     setSelectedExercise(null);
