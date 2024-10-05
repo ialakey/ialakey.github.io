@@ -70,7 +70,7 @@ function App() {
   const [user, setUser] = useState({ first_name: 'User', last_name: '' });
 
   useEffect(() => {
-    if (window.Telegram.WebApp) {
+    if (window.Telegram && window.Telegram.WebApp) {
       const telegramUser = window.Telegram.WebApp.initDataUnsafe?.user;
       if (telegramUser) {
         setUser({
@@ -78,6 +78,8 @@ function App() {
           last_name: telegramUser.last_name || ''
         });
       }
+    } else {
+      console.warn('Это приложение не запущено в Telegram. Пользователь будет загружен с стандартными данными.');
     }
   }, []);
 
