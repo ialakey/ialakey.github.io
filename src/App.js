@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const exercises = [
-  { id: 1, name: 'Карточки' }
+  { id: 1, name: 'Карточки' },
+  { id: 2, name: 'Тесты' }
 ];
 
 const wordsData = [
@@ -11,20 +12,23 @@ const wordsData = [
   { description: 'A small rodent', word: 'Mouse' }
 ];
 
-function MainPage({ onSelectExercise }) {
+function MainPage({ onSelectExercise, user }) {
   return (
     <div className="main-page">
-      <h1>Упражнения</h1>
-      {exercises.map(exercise => (
-        <button key={exercise.id} onClick={() => onSelectExercise(exercise.name)}>
-          {exercise.name}
-        </button>
-      ))}
+      <h1>Привет, {user.first_name} {user.last_name}</h1>
+      <h2>Выберите упражнение:</h2>
+      <div className="exercise-buttons">
+        {exercises.map(exercise => (
+          <button key={exercise.id} onClick={() => onSelectExercise(exercise.name)}>
+            {exercise.name}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
 
-function Flashcards() {
+function Flashcards({ onBackToMain }) {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -40,28 +44,53 @@ function Flashcards() {
   return (
     <div className="flashcards">
       <h1>Карточки</h1>
-      <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={() => setIsFlipped(!isFlipped)}>
-        <div className="card-front">
-          <p>{currentCard.description}</p>
-        </div>
-        <div className="card-back">
-          <p>{currentCard.word}</p>
+      <div
+        className={`card ${isFlipped ? 'flipped' : ''}`}
+        onClick={() => setIsFlipped(!isFlipped)}
+      >
+        <div className="card-inner">
+          <div className="card-front">
+            <p>{currentCard.description}</p>
+          </div>
+          <div className="card-back">
+            <p>{currentCard.word}</p>
+          </div>
         </div>
       </div>
-      <button onClick={handleNextCard}>Вперед</button>
+      <div className="buttons">
+        <button onClick={handleNextCard} className="next-btn">Вперед</button>
+        <button onClick={onBackToMain} className="exit-btn">Выйти</button>
+      </div>
     </div>
   );
 }
 
 function App() {
   const [selectedExercise, setSelectedExercise] = useState(null);
+  const [user, setUser] = useState({ first_name: 'User', last_name: '' });
+
+  useEffect(() => {
+    if (window.Telegram.WebApp) {
+      const telegramUser = window.Telegram.WebApp.initDataUnsafe?.user;
+      if (telegramUser) {
+        setUser({
+          first_name: telegramUser.first_name || 'User',
+          last_name: telegramUser.last_name || ''
+        });
+      }
+    }
+  }, []);
+
+  const handleBackToMain = () => {
+    setSelectedExercise(null);
+  };
 
   const renderExercise = () => {
     switch (selectedExercise) {
       case 'Карточки':
-        return <Flashcards />;
+        return <Flashcards onBackToMain={handleBackToMain} />;
       default:
-        return <MainPage onSelectExercise={setSelectedExercise} />;
+        return <MainPage onSelectExercise={setSelectedExercise} user={user} />;
     }
   };
 
