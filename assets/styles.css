@@ -345,6 +345,9 @@ html[data-theme="light"] .theme-toggle .ico-moon { display: block; }
 .proj-stars.loaded { opacity: 1; }
 .proj-stars svg { width: 13px; height: 13px; fill: currentColor; }
 .proj-desc { margin: 0 0 16px; font-size: 14px; color: var(--text-dim); flex: 1; }
+/* Shown only if both the generated JSON and the GitHub API are unreachable. */
+.proj-empty { grid-column: 1 / -1; margin: 0; padding: 20px; font-size: 14px; color: var(--text-mute); }
+.proj-empty a { color: var(--accent); }
 .proj-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .proj-lang { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-mute); font-family: var(--mono); }
 .proj-lang i { width: 8px; height: 8px; border-radius: 50%; background: var(--text-mute); }

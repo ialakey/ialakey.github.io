@@ -1,0 +1,127 @@
+{
+  "user": "ialakey",
+  "generated": "2026-09-15T11:03:57Z",
+  "repoCount": 21,
+  "projects": [
+    {
+      "repo": "caseforge",
+      "title": "caseforge",
+      "desc": "Open-source CS2 case-opening platform: Steam auth, provably fair openings, an RTP-balanced case builder, bot-driven withdrawals and an admin CRM.",
+      "lang": "TypeScript",
+      "color": "#3178c6",
+      "stars": 5,
+      "badge": "Open source",
+      "url": "https://github.com/ialakey/caseforge"
+    },
+    {
+      "repo": "resume2human",
+      "title": "resume2human",
+      "desc": "Job hunting turned into a pipeline: scrapes vacancies, finds the decision-maker behind each one, and drives direct outreach instead of shouting into an ATS.",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 10,
+      "badge": "Most starred",
+      "url": "https://github.com/ialakey/resume2human"
+    },
+    {
+      "repo": "shorts-factory",
+      "title": "shorts-factory",
+      "desc": "Long video to vertical Shorts. Multi-signal moment scoring instead of asking an LLM what's interesting, plus a virtual camera that reframes 9:16 like a human operator.",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 6,
+      "badge": null,
+      "url": "https://github.com/ialakey/shorts-factory"
+    },
+    {
+      "repo": "anime-dl-core",
+      "title": "anime-dl-core",
+      "desc": "Python library that turns player embeds from seven different hosts into direct HLS/DASH/MP4 links. One interface, a parser per provider.",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 4,
+      "badge": "Library",
+      "url": "https://github.com/ialakey/anime-dl-core"
+    },
+    {
+      "repo": "anime-watch-together",
+      "title": "anime-watch-together",
+      "desc": "Synced watch parties: shared player state across a room, Discord guild auth and episode tracking. FastAPI on top of anime-dl-core.",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 2,
+      "badge": null,
+      "url": "https://github.com/ialakey/anime-watch-together"
+    },
+    {
+      "repo": "srbguide",
+      "title": "srbguide",
+      "desc": "Flutter app for expats in Serbia: visa-run calculator with reminders, white-card generator and a curated directory of local Telegram channels.",
+      "lang": "Dart",
+      "color": "#00B4AB",
+      "stars": 2,
+      "badge": "Google Play",
+      "url": "https://github.com/ialakey/srbguide"
+    },
+    {
+      "repo": "driftdesertrace",
+      "title": "Drift Desert Race",
+      "desc": "Unity racing game about an eight-hour non-stop drift across an endless desert. Shipped and released on Steam.",
+      "lang": "C#",
+      "color": "#178600",
+      "stars": 1,
+      "badge": "Steam",
+      "url": "https://github.com/ialakey/driftdesertrace"
+    },
+    {
+      "repo": "discordbot",
+      "title": "discordbot",
+      "desc": "Dockerized Discord and Telegram bot with voice commands, text-to-speech and voice-channel management, documented end-to-end with Swagger UI.",
+      "lang": "Java",
+      "color": "#b07219",
+      "stars": 3,
+      "badge": null,
+      "url": "https://github.com/ialakey/discordbot"
+    },
+    {
+      "repo": "linguome-flutter",
+      "title": "linguome",
+      "desc": "Point the camera at real-world text and it becomes vocabulary pages, spaced review and mini games. OCR to learning loop.",
+      "lang": "Dart",
+      "color": "#00B4AB",
+      "stars": 2,
+      "badge": "Google Play",
+      "url": "https://github.com/ialakey/linguome-flutter"
+    },
+    {
+      "repo": "keyboard-magic",
+      "title": "keyboard-magic",
+      "desc": "IntelliJ IDEA plugin that fixes text typed in the wrong keyboard layout (RU/EN) with a single shortcut. Built because it annoyed me daily.",
+      "lang": "Kotlin",
+      "color": "#A97BFF",
+      "stars": 0,
+      "badge": "JetBrains plugin",
+      "url": "https://github.com/ialakey/keyboard-magic"
+    },
+    {
+      "repo": "converter-libreoffice",
+      "title": "converter-libreoffice",
+      "desc": "Kotlin + Spring Boot REST service that converts DOCX to HTML and HTML to PDF through headless LibreOffice. The unglamorous kind of backend that has to just work.",
+      "lang": "Kotlin",
+      "color": "#A97BFF",
+      "stars": 1,
+      "badge": null,
+      "url": "https://github.com/ialakey/converter-libreoffice"
+    },
+    {
+      "repo": "chatGPT",
+      "title": "chatGPT",
+      "desc": "Flutter mobile client for the OpenAI ChatGPT API.",
+      "lang": "Dart",
+      "color": "#00B4AB",
+      "stars": 2,
+      "badge": null,
+      "url": "https://github.com/ialakey/chatGPT"
+    }
+  ]
+}
