@@ -1,6 +1,6 @@
 {
   "user": "ialakey",
-  "generated": "2026-09-15T11:03:57Z",
+  "generated": "2026-09-16T09:20:26Z",
   "repoCount": 21,
   "projects": [
     {
@@ -9,7 +9,7 @@
       "desc": "Open-source CS2 case-opening platform: Steam auth, provably fair openings, an RTP-balanced case builder, bot-driven withdrawals and an admin CRM.",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 5,
+      "stars": 6,
       "badge": "Open source",
       "url": "https://github.com/ialakey/caseforge"
     },
