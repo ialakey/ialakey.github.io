@@ -326,6 +326,23 @@ html[data-theme="light"] .theme-toggle .ico-moon { display: block; }
 .chips.big span { padding: 6px 12px; font-size: 12.5px; }
 
 /* ── projects ── */
+
+/* The numbers above the grid: repo count, stars and language count are
+   corrected from the live API in main.js, so they cannot go stale. */
+.os-stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+  gap: 1px; margin: 0 0 22px; padding: 0; list-style: none;
+  border: 1px solid var(--line); border-radius: var(--radius);
+  background: var(--line-soft); overflow: hidden;
+}
+.os-stat { display: flex; flex-direction: column; gap: 5px; padding: 18px 20px; background: var(--bg); }
+.os-num {
+  font-family: var(--mono); font-size: 22px; font-weight: 700;
+  color: var(--accent); font-variant-numeric: tabular-nums; letter-spacing: -0.02em;
+}
+.os-stat:last-child .os-num { font-size: 14px; color: var(--text); letter-spacing: 0; }
+.os-lbl { font-size: 12.5px; color: var(--text-mute); }
+
 .projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
 .proj {
   display: flex; flex-direction: column;

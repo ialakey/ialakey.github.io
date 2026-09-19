@@ -20,7 +20,7 @@
     user: "ialakey",
 
     /* How many cards the grid shows. */
-    limit: 12,
+    limit: 14,
 
     /* Never show these, whatever their stars. */
     exclude: [
@@ -36,13 +36,15 @@
       "resume2human",
       "shorts-factory",
       "anime-dl-core",
-      "anime-watch-together",
       "srbguide",
+      "anipocket",
+      "music-video-generator",
       "driftdesertrace",
-      "discordbot",
-      "linguome-flutter",
+      "anime-watch-together",
+      "converter-libreoffice",
       "keyboard-magic",
-      "converter-libreoffice"
+      "linguome-flutter",
+      "discordbot"
     ],
 
     /* Per-repo overrides. Every field is optional; anything missing comes
@@ -60,8 +62,15 @@
         desc: "Long video to vertical Shorts. Multi-signal moment scoring instead of asking an LLM what's interesting, plus a virtual camera that reframes 9:16 like a human operator."
       },
       "anime-dl-core": {
-        desc: "Python library that turns player embeds from seven different hosts into direct HLS/DASH/MP4 links. One interface, a parser per provider.",
-        badge: "Library"
+        desc: "Python library that turns player embeds from eight different hosts into direct HLS/DASH/MP4 links. One interface, a parser per provider, published on PyPI.",
+        badge: "PyPI"
+      },
+      "anipocket": {
+        desc: "Watch and download anime on your phone — offline-first, no account, no server of mine to trust. Flutter on top of the same extraction core.",
+        badge: "Android"
+      },
+      "music-video-generator": {
+        desc: "A track and a picture in, a music video out: slowed + reverb, a spectrum visualiser and film grain, composed by ffmpeg from one config file."
       },
       "anime-watch-together": {
         desc: "Synced watch parties: shared player state across a room, Discord guild auth and episode tracking. FastAPI on top of anime-dl-core."

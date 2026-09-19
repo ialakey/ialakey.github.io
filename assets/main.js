@@ -86,36 +86,64 @@
     if (count && data.repoCount) count.textContent = data.repoCount;
 
     setupReveal(grid.querySelectorAll(".proj"));
-    refreshStars();
+    refreshLiveNumbers();
   }
 
-  /* ---------- live star counts ----------
-     projects.json is at most a day old; this corrects it in place. One
-     unauthenticated request, and if GitHub rate-limits us the rendered
-     numbers simply stay as they are. */
-  function refreshStars() {
+  /* ---------- live numbers ----------
+     projects.json is at most a day old; this corrects the star counts and
+     the totals above the grid in place. One unauthenticated request, and if
+     GitHub rate-limits us the rendered numbers simply stay as they are. */
+  function refreshLiveNumbers() {
     getJSON("https://api.github.com/users/" + GH_USER + "/repos?per_page=100&type=owner&sort=pushed")
       .then(function (repos) {
         if (!Array.isArray(repos)) return;
+
         var byName = {};
         repos.forEach(function (r) { byName[r.name] = r.stargazers_count; });
         document.querySelectorAll(".proj-stars").forEach(function (el) {
           var n = byName[el.dataset.repo];
           if (typeof n === "number") el.querySelector(".proj-star-count").textContent = n;
         });
+
+        var own = repos.filter(function (r) { return r && !r.private && !r.fork; });
+        var stars = own.reduce(function (s, r) { return s + (r.stargazers_count || 0); }, 0);
+        var langs = {};
+        own.forEach(function (r) { if (r.language) langs[r.language] = true; });
+
+        setMetric("os-repos", own.length);
+        setMetric("os-stars", stars);
+        setMetric("os-langs", Object.keys(langs).length);
       })
       .catch(function () { /* keep the numbers we already have */ });
   }
 
+  /* Rewrite a counter's target. If it has already run (or is mid-flight)
+     the fresh value wins; animateCount cancels whatever came before. A
+     number that has not been revealed yet just waits with the new target. */
+  function setMetric(id, value) {
+    var el = document.getElementById(id);
+    if (!el || !value) return;
+    el.dataset.count = value;
+    if (!canObserve) { el._run = null; el.textContent = value.toLocaleString("en-US"); return; }
+    if (el.dataset.animated === "1") animateCount(el);
+  }
+
   /* ---------- animated metric counters ---------- */
+  var animRun = 0;
+
   function animateCount(el) {
     var target = parseFloat(el.dataset.count);
     var decimals = parseInt(el.dataset.decimals || "0", 10);
     var suffix = el.dataset.suffix || "";
     var duration = 1100;
     var start = performance.now();
+    // A live number can land while an earlier run is still counting up;
+    // the newest run wins and the older one stops on its next frame.
+    var run = el._run = ++animRun;
+    el.dataset.animated = "1";
 
     function frame(now) {
+      if (el._run !== run) return;
       var t = Math.min((now - start) / duration, 1);
       var eased = 1 - Math.pow(1 - t, 3);
       var value = target * eased;

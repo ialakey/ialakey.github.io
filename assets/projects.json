@@ -1,6 +1,6 @@
 {
   "user": "ialakey",
-  "generated": "2026-09-19T08:50:31Z",
+  "generated": "2026-09-19T18:48:06Z",
   "repoCount": 23,
   "projects": [
     {
@@ -36,22 +36,12 @@
     {
       "repo": "anime-dl-core",
       "title": "anime-dl-core",
-      "desc": "Python library that turns player embeds from seven different hosts into direct HLS/DASH/MP4 links. One interface, a parser per provider.",
+      "desc": "Python library that turns player embeds from eight different hosts into direct HLS/DASH/MP4 links. One interface, a parser per provider, published on PyPI.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 3,
-      "badge": "Library",
+      "stars": 35,
+      "badge": "PyPI",
       "url": "https://github.com/ialakey/anime-dl-core"
-    },
-    {
-      "repo": "anime-watch-together",
-      "title": "anime-watch-together",
-      "desc": "Synced watch parties: shared player state across a room, Discord guild auth and episode tracking. FastAPI on top of anime-dl-core.",
-      "lang": "Python",
-      "color": "#3572A5",
-      "stars": 2,
-      "badge": null,
-      "url": "https://github.com/ialakey/anime-watch-together"
     },
     {
       "repo": "srbguide",
@@ -64,6 +54,26 @@
       "url": "https://github.com/ialakey/srbguide"
     },
     {
+      "repo": "anipocket",
+      "title": "anipocket",
+      "desc": "Watch and download anime on your phone — offline-first, no account, no server of mine to trust. Flutter on top of the same extraction core.",
+      "lang": "Dart",
+      "color": "#00B4AB",
+      "stars": 0,
+      "badge": "Android",
+      "url": "https://github.com/ialakey/anipocket"
+    },
+    {
+      "repo": "music-video-generator",
+      "title": "music-video-generator",
+      "desc": "A track and a picture in, a music video out: slowed + reverb, a spectrum visualiser and film grain, composed by ffmpeg from one config file.",
+      "lang": "Python",
+      "color": "#3572A5",
+      "stars": 1,
+      "badge": null,
+      "url": "https://github.com/ialakey/music-video-generator"
+    },
+    {
       "repo": "driftdesertrace",
       "title": "Drift Desert Race",
       "desc": "Unity racing game about an eight-hour non-stop drift across an endless desert. Shipped and released on Steam.",
@@ -74,24 +84,24 @@
       "url": "https://github.com/ialakey/driftdesertrace"
     },
     {
-      "repo": "discordbot",
-      "title": "discordbot",
-      "desc": "Dockerized Discord and Telegram bot with voice commands, text-to-speech and voice-channel management, documented end-to-end with Swagger UI.",
-      "lang": "Java",
-      "color": "#b07219",
+      "repo": "anime-watch-together",
+      "title": "anime-watch-together",
+      "desc": "Synced watch parties: shared player state across a room, Discord guild auth and episode tracking. FastAPI on top of anime-dl-core.",
+      "lang": "Python",
+      "color": "#3572A5",
       "stars": 2,
       "badge": null,
-      "url": "https://github.com/ialakey/discordbot"
+      "url": "https://github.com/ialakey/anime-watch-together"
     },
     {
-      "repo": "linguome-flutter",
-      "title": "linguome",
-      "desc": "Point the camera at real-world text and it becomes vocabulary pages, spaced review and mini games. OCR to learning loop.",
-      "lang": "Dart",
-      "color": "#00B4AB",
+      "repo": "converter-libreoffice",
+      "title": "converter-libreoffice",
+      "desc": "Kotlin + Spring Boot REST service that converts DOCX to HTML and HTML to PDF through headless LibreOffice. The unglamorous kind of backend that has to just work.",
+      "lang": "Kotlin",
+      "color": "#A97BFF",
       "stars": 1,
-      "badge": "Google Play",
-      "url": "https://github.com/ialakey/linguome-flutter"
+      "badge": null,
+      "url": "https://github.com/ialakey/converter-libreoffice"
     },
     {
       "repo": "keyboard-magic",
@@ -104,14 +114,24 @@
       "url": "https://github.com/ialakey/keyboard-magic"
     },
     {
-      "repo": "converter-libreoffice",
-      "title": "converter-libreoffice",
-      "desc": "Kotlin + Spring Boot REST service that converts DOCX to HTML and HTML to PDF through headless LibreOffice. The unglamorous kind of backend that has to just work.",
-      "lang": "Kotlin",
-      "color": "#A97BFF",
+      "repo": "linguome-flutter",
+      "title": "linguome",
+      "desc": "Point the camera at real-world text and it becomes vocabulary pages, spaced review and mini games. OCR to learning loop.",
+      "lang": "Dart",
+      "color": "#00B4AB",
       "stars": 1,
+      "badge": "Google Play",
+      "url": "https://github.com/ialakey/linguome-flutter"
+    },
+    {
+      "repo": "discordbot",
+      "title": "discordbot",
+      "desc": "Dockerized Discord and Telegram bot with voice commands, text-to-speech and voice-channel management, documented end-to-end with Swagger UI.",
+      "lang": "Java",
+      "color": "#b07219",
+      "stars": 2,
       "badge": null,
-      "url": "https://github.com/ialakey/converter-libreoffice"
+      "url": "https://github.com/ialakey/discordbot"
     },
     {
       "repo": "chatGPT",

@@ -52,7 +52,7 @@ field is the only thing worth keeping tidy. Repos without one are skipped.
 
 - **Projects** — `CONFIG` at the top of `assets/projects-lib.js`, the single source of
   truth for both the workflow and the browser fallback:
-  - `limit` — how many cards the grid shows (currently 12).
+  - `limit` — how many cards the grid shows (currently 14).
   - `exclude` — repos that never appear.
   - `pinned` — repos shown first, in that order. Everything else fills the remaining
     slots by stars, then by most recently pushed.
@@ -68,7 +68,9 @@ field is the only thing worth keeping tidy. Repos without one are skipped.
 
   (A `GITHUB_TOKEN` env var is optional locally — it only raises the API rate limit.)
 - **Experience, stack, contacts** — plain markup in `index.html`. The repo count in the
-  Projects lede is filled in from `projects.json` at runtime.
+  Projects lede is filled in from `projects.json` at runtime, and the three counters
+  above the grid (repos, stars, languages) are recomputed from the live API in
+  `assets/main.js` — the numbers in the markup are only the pre-JS fallback.
 - **Colors, spacing, radii** — CSS variables in the `:root` block of `assets/styles.css`.
   The light theme overrides the same variables under `html[data-theme="light"]`.
 - **Social card** — `assets/og.png`, 1200×630.
