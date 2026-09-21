@@ -1,6 +1,6 @@
 {
   "user": "ialakey",
-  "generated": "2026-09-20T09:19:44Z",
+  "generated": "2026-09-21T10:00:16Z",
   "repoCount": 23,
   "projects": [
     {
@@ -9,7 +9,7 @@
       "desc": "Open-source CS2 case-opening platform: Steam auth, provably fair openings, an RTP-balanced case builder, bot-driven withdrawals and an admin CRM.",
       "lang": "TypeScript",
       "color": "#3178c6",
-      "stars": 11,
+      "stars": 12,
       "badge": "Open source",
       "url": "https://github.com/ialakey/caseforge"
     },
@@ -39,7 +39,7 @@
       "desc": "Python library that turns player embeds from eight different hosts into direct HLS/DASH/MP4 links. One interface, a parser per provider, published on PyPI.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 35,
+      "stars": 36,
       "badge": "PyPI",
       "url": "https://github.com/ialakey/anime-dl-core"
     },
