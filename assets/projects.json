@@ -1,6 +1,6 @@
 {
   "user": "ialakey",
-  "generated": "2026-09-25T09:39:11Z",
+  "generated": "2026-09-27T10:03:02Z",
   "repoCount": 26,
   "projects": [
     {
@@ -39,7 +39,7 @@
       "desc": "Python library that turns player embeds from eight different hosts into direct HLS/DASH/MP4 links. One interface, a parser per provider, published on PyPI.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 37,
+      "stars": 38,
       "badge": "PyPI",
       "url": "https://github.com/ialakey/anime-dl-core"
     },
