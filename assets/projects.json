@@ -1,6 +1,6 @@
 {
   "user": "ialakey",
-  "generated": "2026-10-01T11:00:09Z",
+  "generated": "2026-10-04T10:37:10Z",
   "repoCount": 26,
   "projects": [
     {
@@ -39,7 +39,7 @@
       "desc": "Python library that turns player embeds from eight different hosts into direct HLS/DASH/MP4 links. One interface, a parser per provider, published on PyPI.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 16,
+      "stars": 17,
       "badge": "PyPI",
       "url": "https://github.com/ialakey/anime-dl-core"
     },
@@ -69,7 +69,7 @@
       "desc": "A track and a picture in, a music video out: slowed + reverb, a spectrum visualiser and film grain, composed by ffmpeg from one config file.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 1,
+      "stars": 2,
       "badge": null,
       "url": "https://github.com/ialakey/music-video-generator"
     },
