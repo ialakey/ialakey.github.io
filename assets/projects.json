@@ -1,6 +1,6 @@
 {
   "user": "ialakey",
-  "generated": "2026-10-04T10:37:10Z",
+  "generated": "2026-10-11T10:52:21Z",
   "repoCount": 26,
   "projects": [
     {
@@ -134,14 +134,14 @@
       "url": "https://github.com/ialakey/discordbot"
     },
     {
-      "repo": "chatGPT",
-      "title": "chatGPT",
-      "desc": "Flutter mobile client for the OpenAI ChatGPT API.",
-      "lang": "Dart",
-      "color": "#00B4AB",
+      "repo": "NEXTBREAKER",
+      "title": "NEXTBREAKER",
+      "desc": "Break the run — god mode, mega damage, infinite everything. MelonLoader trainer, save unlocker and CoreModule fix for the Go Next! Demo (Unity 6 / IL2CPP).",
+      "lang": "C#",
+      "color": "#178600",
       "stars": 2,
       "badge": null,
-      "url": "https://github.com/ialakey/chatGPT"
+      "url": "https://github.com/ialakey/NEXTBREAKER"
     }
   ]
 }
