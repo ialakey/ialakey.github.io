@@ -1,6 +1,6 @@
 {
   "user": "ialakey",
-  "generated": "2026-11-07T11:07:59Z",
+  "generated": "2026-11-09T12:58:16Z",
   "repoCount": 26,
   "projects": [
     {
@@ -69,7 +69,7 @@
       "desc": "A track and a picture in, a music video out: slowed + reverb, a spectrum visualiser and film grain, composed by ffmpeg from one config file.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 6,
+      "stars": 7,
       "badge": null,
       "url": "https://github.com/ialakey/music-video-generator"
     },
@@ -89,7 +89,7 @@
       "desc": "Synced watch parties: shared player state across a room, Discord guild auth and episode tracking. FastAPI on top of anime-dl-core.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 2,
+      "stars": 3,
       "badge": null,
       "url": "https://github.com/ialakey/anime-watch-together"
     },
