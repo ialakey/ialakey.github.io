@@ -1,6 +1,6 @@
 {
   "user": "ialakey",
-  "generated": "2026-11-09T12:58:16Z",
+  "generated": "2026-11-11T11:55:43Z",
   "repoCount": 26,
   "projects": [
     {
@@ -39,7 +39,7 @@
       "desc": "Python library that turns player embeds from eight different hosts into direct HLS/DASH/MP4 links. One interface, a parser per provider, published on PyPI.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 12,
+      "stars": 13,
       "badge": "PyPI",
       "url": "https://github.com/ialakey/anime-dl-core"
     },
@@ -139,7 +139,7 @@
       "desc": "Break the run — god mode, mega damage, infinite everything. MelonLoader trainer, save unlocker and CoreModule fix for the Go Next! Demo (Unity 6 / IL2CPP).",
       "lang": "C#",
       "color": "#178600",
-      "stars": 2,
+      "stars": 3,
       "badge": null,
       "url": "https://github.com/ialakey/NEXTBREAKER"
     }
