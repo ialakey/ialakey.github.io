@@ -1,6 +1,6 @@
 {
   "user": "ialakey",
-  "generated": "2026-11-17T13:33:43Z",
+  "generated": "2026-11-18T13:09:28Z",
   "repoCount": 26,
   "projects": [
     {
@@ -59,7 +59,7 @@
       "desc": "Watch and download anime on your phone — offline-first, no account, no server of mine to trust. Flutter on top of the same extraction core.",
       "lang": "Dart",
       "color": "#00B4AB",
-      "stars": 0,
+      "stars": 1,
       "badge": "Android",
       "url": "https://github.com/ialakey/anipocket"
     },
