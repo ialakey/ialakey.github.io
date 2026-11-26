@@ -1,6 +1,6 @@
 {
   "user": "ialakey",
-  "generated": "2026-11-22T12:39:32Z",
+  "generated": "2026-11-26T13:58:31Z",
   "repoCount": 26,
   "projects": [
     {
@@ -69,7 +69,7 @@
       "desc": "A track and a picture in, a music video out: slowed + reverb, a spectrum visualiser and film grain, composed by ffmpeg from one config file.",
       "lang": "Python",
       "color": "#3572A5",
-      "stars": 8,
+      "stars": 9,
       "badge": null,
       "url": "https://github.com/ialakey/music-video-generator"
     },
